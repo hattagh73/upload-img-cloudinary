@@ -18,9 +18,5 @@ In this project we will explore on how to upload image to Cloudinary.
 | `image` | `file` | **Required**. One Image |
 
 ## Images Reference
-![ss-post-img-to-cloudinary](https://user-images.githubusercontent.com/92319348/196142744-ec859070-b81c-4f82-a0d9-8196bbce268b.PNG)
-
-![ss-respond-after-upload](https://user-images.githubusercontent.com/92319348/196143356-dc2b49fc-fc45-4a10-b173-ddc878cdd901.PNG)
-
-![ss-img-in-cloudinary](https://user-images.githubusercontent.com/92319348/196143383-a1c6303d-9909-4380-af79-1306e748062c.png)
+![step-to-upload](https://user-images.githubusercontent.com/92319348/196146390-cf3dc8b3-d56f-47d7-84cf-9613f00709f7.png)
 
