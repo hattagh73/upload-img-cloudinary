@@ -9,7 +9,6 @@ In this project we will explore on how to upload image to Cloudinary.
 
 
 ## API Reference
-
 #### Post single image
 
  `POST` `http://localhost:4000/one-image-cloudinary`
@@ -18,4 +17,6 @@ In this project we will explore on how to upload image to Cloudinary.
 | :-------- | :------- | :------------------------- |
 | `image` | `file` | **Required**. One Image |
 
-![Screenshot](images/ss-img-in-cloudinary.png)
+## Images Reference
+![ss-post-img-to-cloudinary](https://user-images.githubusercontent.com/92319348/196142744-ec859070-b81c-4f82-a0d9-8196bbce268b.PNG)
+
