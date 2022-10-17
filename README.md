@@ -18,4 +18,4 @@ In this project we will explore on how to upload image to Cloudinary.
 | :-------- | :------- | :------------------------- |
 | `image` | `file` | **Required**. One Image |
 
-![](images/ss-img-in-cloudinary.png);
+![Screenshot](images/ss-img-in-cloudinary.png)
