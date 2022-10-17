@@ -12,7 +12,7 @@ In this project we will explore on how to upload image to Cloudinary.
 
 #### Post single image
 
-```http
+```
   POST http://localhost:4000/one-image-cloudinary
 ```
 
