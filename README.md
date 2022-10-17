@@ -17,3 +17,5 @@ In this project we will explore on how to upload image to Cloudinary.
 | Body | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `image` | `file` | **Required**. One Image |
+
+![plot](./readme-img/ss-img-in-cloudinary.PNG);
