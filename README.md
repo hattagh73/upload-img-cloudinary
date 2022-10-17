@@ -18,4 +18,5 @@ In this project we will explore on how to upload image to Cloudinary.
 | :-------- | :------- | :------------------------- |
 | `image` | `file` | **Required**. One Image |
 
-![Screenshot](./readme-img/ss-img-in-cloudinary.PNG);
+<!-- ![Screenshot](./readme-img/ss-img-in-cloudinary.PNG); -->
+<img src='./readme-img/ss-img-in-cloudinary.PNG' />
