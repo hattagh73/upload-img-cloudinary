@@ -11,6 +11,7 @@ In this project we will explore on how to connect, integrate and upload image to
 - [Reference](#%EF%B8%8F-reference) 
 
 ## 🚀 Technology Stack
+A list of technology stack that we applied in this project. There are as listed below:
 - [NodeJS](https://nodejs.org/en/)
 - [ExpressJS](https://expressjs.com/)
 - [Cloudinary](https://cloudinary.com/)
@@ -27,7 +28,11 @@ In this project we will explore on how to connect, integrate and upload image to
 | `image` | `file` | **Required** One Image |
 
 ## 📷 Results
+Here are some results of this project.
+
+
 ![Frame 14](https://user-images.githubusercontent.com/92319348/196485724-c90e0e8f-c23b-450c-890a-2dea07607652.png)
 
 ## ✏️ Reference 
-[Reference-1](https://www.topcoder.com/thrive/articles/using-cloudinary-for-image-storage-with-express)
+A list of references that can be really helpful in connecting, integrating to **Cloudinary** and some coding as well.
+- [Reference-1](https://www.topcoder.com/thrive/articles/using-cloudinary-for-image-storage-with-express)
