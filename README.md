@@ -18,7 +18,7 @@ In this project we will explore on how to upload image to Cloudinary.
 | `image` | `file` | **Required**. One Image |
 
 ## Image Reference
-![Frame 14](https://user-images.githubusercontent.com/92319348/196485271-248556ea-4753-4e8e-8ecf-03780010fe65.png)
+![Frame 14](https://user-images.githubusercontent.com/92319348/196485724-c90e0e8f-c23b-450c-890a-2dea07607652.png)
 
 ## Code Reference
 https://www.topcoder.com/thrive/articles/using-cloudinary-for-image-storage-with-express
