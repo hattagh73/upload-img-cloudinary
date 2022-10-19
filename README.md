@@ -11,6 +11,8 @@ In this project we will explore on how to connect, integrate and upload image to
   - [Check Single Image Details](#check-single-image-details)
   - [Check List Of Folders](#check-list-of-folders)
 - [Results](#-results) 
+  - [Single Img Result](#single-img-result)
+  - [Multiple Imgs Result](#multiple-imgs-result)
 - [Reference](#%EF%B8%8F-reference) 
 
 ## 🚀 Technology Stack
@@ -48,8 +50,11 @@ A list of API that we have created so far. We will be adding more API soon as we
 ## 📷 Results
 Here are some results of this project.
 
-
+#### Single Img Result
 ![Frame 14](https://user-images.githubusercontent.com/92319348/196485724-c90e0e8f-c23b-450c-890a-2dea07607652.png)
+
+#### Multiple Imgs Result
+test
 
 ## ✏️ Reference 
 A list of references that is helpful in this project on connecting, integrating to **Cloudinary**. Also some codes as well.
