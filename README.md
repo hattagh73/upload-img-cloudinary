@@ -1,5 +1,5 @@
 ## Upload Image To Cloudinary
-In this project we will explore on how to connect, integrate and upload image to **Cloudinary** using technology like Node, Express and etc.
+In this project we will explore on how to connect, integrate and upload image to **Cloudinary** using technology like Node, Express and etc. Please take note that this is not an online project, we only do on our local. Also you may refer to the **Table of Contents** below for your guidance of this project.
 
 
 **Table of Contents:**
