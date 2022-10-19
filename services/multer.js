@@ -25,8 +25,10 @@ const fileFilter2 = (req, file, cb) => {
   ) {
     cb(null, true);
   } else {
-    cb(null, false);
-    return cb(new Error("Only .png, .jpg and .jpeg formats is allowed"));
+    // cb(null, false);
+    // return cb(new Error("Only .png, .jpg and .jpeg formats is allowed"));
+    // cb({message: 'Unsupported file format'}, false)
+    cb(new Error("Unsupported file format"), false);
   }
 }
 
