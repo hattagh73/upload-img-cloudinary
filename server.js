@@ -62,12 +62,6 @@ app.post('/upload-single-img', upload.single('image'), async (req, res) => {
 /* POST Many Image */
 app.post('/upload-three-img', upload.array('image', 6), async (req, res) => {
     
-    // const options = {
-    //     upload_preset: "s31ypadd",
-    //     folder: "folder-project",
-    //     resource_type: "image"
-    // };
-    
     try {
         const options = {
             upload_preset: "s31ypadd",
@@ -75,29 +69,25 @@ app.post('/upload-three-img', upload.array('image', 6), async (req, res) => {
             resource_type: "image"
         };
 
+        let urls = [];
         const files = req.files;
-        
-        const filePath = files.map(async item => {
-            // const tmp = {};
-            // tmp['path'] = item.path;
-            // tmp['fieldname'] = item.fieldname;
-            // tmp['originalname'] = item.originalname;
-            // return tmp;
+        const uploader = async (path) => await cloudinary.uploader.upload(path, options);
+
+        for (const file of files) {
+            const { path } = file;
+            const newPath = await uploader(path);
             
-            return await cloudinary.uploader.upload(item.path, options);
+            urls.push({secure_url: newPath.secure_url, public_id: newPath.public_id})
+                    
+        }
+
+        res.status(200).json({
+            success: true,
+            message: `${urls.length} Images has been uploaded successfully`,
+            data: urls
         })
-        console.log(filePath)
 
         
-
-        // const result = await cloudinary.uploader.upload(filePath.map(item => item.path), options);
-        if(filePath) {
-            // console.log(result);
-            res.json({
-                success: true,
-                message: 'Uploaded to cloudinary ;)'
-            })
-        } 
     } catch(err) {
         res.json({
             success: false,
@@ -178,11 +168,6 @@ app.get('/get-list-folders', async(req, res) => {
 /* START Server */
 const port = process.env.PORT || 4000;
 app.listen(port, (err) => {
-    // console.log(upload)
-    // const arrObj = [];
-    // arrObj.push({path: 1})
-    // arrObj.push({path: 2})
-    // console.log(arrObj)
 
     if (!err) return console.log(`Server is running. PORT::: ${port}`);  
 
