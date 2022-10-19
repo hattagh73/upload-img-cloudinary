@@ -7,6 +7,8 @@ In this project we will explore on how to connect, integrate and upload image to
 - [Technology Stack](#-technology-stack)
 - [API List](#-api-list)
   - [Upload Single Image](#upload-single-image)
+  - [Check Single Image Details](#check-single-image-details)
+  - [Check List Of Folders](#check-list-of-folders)
 - [Results](#-results) 
 - [Reference](#%EF%B8%8F-reference) 
 
@@ -25,6 +27,16 @@ A list of API that we have created so far. We will be adding more API soon as we
 | Method    | API                                          | Body    | Type   | Description            |
 | :-------- | :------------------------------------------- | :-------| :------| :----------------------|
 | `POST`    | `http://localhost:4000/one-image-cloudinary` | `image` | `file` | **Required** One Image |
+
+#### Check Single Image Details
+| Method    | API                                             | Description            |
+| :-------- | :---------------------------------------------- | :----------------------| 
+| `GET`     | `http://localhost:4000/get-single-image-detail` | **Required** public_id in the code |
+
+#### Check List Of Folders
+| Method    | API                                             |
+| :-------- | :---------------------------------------------- |
+| `GET`     | `http://localhost:4000/get-list-folders`        |
 
 ## 📷 Results
 Here are some results of this project.
