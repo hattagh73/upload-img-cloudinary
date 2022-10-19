@@ -19,22 +19,11 @@ app.post('/upload-single-img', upload.single('image'), async (req, res) => {
         resource_type: "image"
     };
 
-    // await cloudinary.uploader.upload(req.file.path, options, async function(err, rslt) {
-    //     if(rslt) {
-    //         res.json({
-    //             success: true,
-    //             message: rslt.secure_url
-    //         })
-    //     } 
-    //     if(err) {
-    //         res.json({
-    //             success: false,
-    //             message: err
-    //         })
-    //     }
-    // })
-    
+    if(!req.file) return res.json({ success: false, message: 'No image selected. Please select an image.'})
+
     try {
+        
+
         const response = await cloudinary.uploader.upload(req.file.path, options);
         console.log(response)
         if(response) {
@@ -64,9 +53,8 @@ app.post('/upload-single-img', upload.single('image'), async (req, res) => {
     } catch(err) {
         res.json({
             success: false,
-            message: err
+            message: err.stack
         })
-        
     }
     
 });
@@ -157,6 +145,34 @@ app.get('/get-single-image-detail', async(req, res, next) => {
 
     
     
+});
+
+/* GET Check Lists All Folders */
+app.get('/get-list-folders', async(req, res) => {
+
+    const options = {
+        public_id: 'folder-project/kbr4uqumyuwlmg4uhn5a',
+    };
+
+    try {
+        // API resource: Accept one parameter
+        const resp = await cloudinary.api.root_folders();
+        if(resp) {
+            res.json({
+                success: true,
+                message: 'List of folders found',
+                folders: resp.folders,
+                ttl_folders: resp.total_count
+            })
+        }
+
+        
+    } catch (error) {
+        res.json({
+            success: false,
+            message: error
+        })
+    }
 });
 
 /* START Server */
