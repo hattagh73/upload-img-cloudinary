@@ -54,7 +54,8 @@ Here are some results of this project.
 ![Frame 14](https://user-images.githubusercontent.com/92319348/196485724-c90e0e8f-c23b-450c-890a-2dea07607652.png)
 
 #### Multiple Imgs Result
-test
+![Frame 15](https://user-images.githubusercontent.com/92319348/196729187-22a6380f-f19a-4301-ba73-e2e61d145d24.png)
+
 
 ## ✏️ Reference 
 A list of references that is helpful in this project on connecting, integrating to **Cloudinary**. Also some codes as well.
