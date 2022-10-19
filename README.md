@@ -7,6 +7,7 @@ In this project we will explore on how to connect, integrate and upload image to
 - [Technology Stack](#-technology-stack)
 - [API List](#-api-list)
   - [Upload Single Image](#upload-single-image)
+  - [Upload Multiple Images](#upload-multiple-images)
   - [Check Single Image Details](#check-single-image-details)
   - [Check List Of Folders](#check-list-of-folders)
 - [Results](#-results) 
@@ -28,9 +29,15 @@ A list of API that we have created so far. We will be adding more API soon as we
 | :-------- | :------------------------------------------- | :-------| :------| :----------------------|
 | `POST`    | `http://localhost:4000/one-image-cloudinary` | `image` | `file` | **Required** One Image |
 
+#### Upload Multiple Images
+
+| Method    | API                                          | Body    | Type   | Description               |
+| :-------- | :------------------------------------------- | :-------| :------| :------------------------ |
+| `POST`    | `http://localhost:4000/upload-three-img`     | `image` | `file` | **Required** Multi Images |
+
 #### Check Single Image Details
-| Method    | API                                             | Description            |
-| :-------- | :---------------------------------------------- | :----------------------| 
+| Method    | API                                             | Description                        |
+| :-------- | :---------------------------------------------- | :----------------------------------| 
 | `GET`     | `http://localhost:4000/get-single-image-detail` | **Required** public_id in the code |
 
 #### Check List Of Folders
@@ -46,4 +53,7 @@ Here are some results of this project.
 
 ## ✏️ Reference 
 A list of references that is helpful in this project on connecting, integrating to **Cloudinary**. Also some codes as well.
-- [Reference-1](https://www.topcoder.com/thrive/articles/using-cloudinary-for-image-storage-with-express)
+- [Reference 1](https://www.topcoder.com/thrive/articles/using-cloudinary-for-image-storage-with-express)
+- [Reference 2](https://medium.com/the-andela-way/how-to-upload-multiple-images-using-cloudinary-and-node-js-2f053b167b80s)
+- [Reference 3](https://stackoverflow.com/questions/53853827/async-await-for-cloudinary-upload-not-working)
+- [Reference 4](https://stackoverflow.com/questions/69565984/trying-to-wait-until-multiple-images-upload-to-cloudinary)
