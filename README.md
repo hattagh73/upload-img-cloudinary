@@ -6,7 +6,7 @@ In this project we will explore on how to connect, integrate and upload image to
 - [Project Title](#upload-image-to-cloudinary)
 - [Technology Stack](#-technology-stack)
 - [API List](#-api-list)
-  - [[POST] Upload Single Image](#upload-single-image)
+  - [Upload Single Image](#upload-single-image)
 - [Results](#-results) 
 - [Reference](#%EF%B8%8F-reference) 
 
@@ -19,13 +19,12 @@ A list of technology stack that we applied in this project. There are as listed 
 
 
 ## 📚 API List
-#### Upload single image
+A list of API that we have created so far. We will add more API in this list.
+#### Upload Single Image
 
-`POST` `http://localhost:4000/one-image-cloudinary`
-
-| Body | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `image` | `file` | **Required** One Image |
+| Method    | API                                          | Body    | Type   | Description            |
+| :-------- | :------------------------------------------- | :-------| :------| :----------------------|
+| `POST`    | `http://localhost:4000/one-image-cloudinary` | `image` | `file` | **Required** One Image |
 
 ## 📷 Results
 Here are some results of this project.
